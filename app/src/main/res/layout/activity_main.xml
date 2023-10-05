@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+    <LinearLayout
+        android:id="@+id/welcome_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#202B32"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            android:text="Welcome to LearningX!"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:text="@string/welcome_message"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:background="@drawable/active_button"
+            android:text="Learn more"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/your_learningx_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/welcome_banner"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/create_club_card"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/welcome_banner"
+        android:layout_margin="4dp"
+        android:background="@drawable/edit_text_round_shape"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_person_add_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create your club"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="join or create your college club"
+            android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:background="@drawable/inactive_button"
+            android:padding="4dp"
+            android:text="Learn more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/join_learningx_club_card"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/welcome_banner"
+        android:layout_toRightOf="@id/create_club_card"
+        android:layout_margin="4dp"
+        android:background="@drawable/edit_text_round_shape"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_people_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Join our Learningx club"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="our club is for all different colleges student for their particular interest."
+            android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:background="@drawable/inactive_button"
+            android:padding="4dp"
+            android:text="Learn more" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/connection_live_session_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/your_learningx_row"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_text_round_shape"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_handshake_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Make connections"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Connect with Students from different Colleges."
+                android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@drawable/inactive_button"
+                android:padding="4dp"
+                android:text="Learn more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/welcome_banner"
+            android:layout_toRightOf="@id/create_club_card"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_text_round_shape"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_live_tv_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Live sessions"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Join daily live sessions on our club. or You can also give live sessions."
+                android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@drawable/inactive_button"
+                android:padding="4dp"
+                android:text="Learn more" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/learn_and_earn_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/connection_live_session_row"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/welcome_banner"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_text_round_shape"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_menu_book_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Learn skill"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Learn skill from our club daliy live sessions from expert and from discussion from different students."
+                android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@drawable/inactive_button"
+                android:padding="4dp"
+                android:text="Learn more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/welcome_banner"
+            android:layout_toRightOf="@id/create_club_card"
+            android:layout_margin="4dp"
+            android:background="@drawable/edit_text_round_shape"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_shield_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Earn Prizes"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Participate in all competition organized by colleges or companies and earn prizes."
+                android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@drawable/inactive_button"
+                android:padding="4dp"
+                android:text="Learn more" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/detail_cards_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_margin="4dp"
+        android:background="#F9FAFB"
+        android:layout_below="@id/learn_and_earn_card"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/create_club_heading"
+            android:layout_width="120dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_person_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create your club"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="join or create your college club"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/create_club_paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_club_text"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/create_club_heading"/>
+
+<!--        <View-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_below="@id/create_club_heading"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:background="#737373" />-->
+        <LinearLayout
+            android:id="@+id/join_learningx_club_heading"
+            android:layout_width="120dp"
+            android:layout_height="136dp"
+            android:layout_below="@id/create_club_paragraph"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_person_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create your club"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="join or create your college club"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/join_learningx_club_paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/create_club_text"
+            android:textSize="10dp"
+            android:layout_below="@id/create_club_heading"
+            android:layout_toLeftOf="@id/join_learningx_club_heading"/>
+
+        <LinearLayout
+            android:id="@+id/make_connection_heading"
+            android:layout_width="120dp"
+            android:layout_height="136dp"
+            android:layout_below="@id/join_learningx_club_paragraph"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_person_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create your club"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="join or create your college club"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/make_connection_paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/create_club_text"
+            android:textSize="10dp"
+            android:layout_below="@id/join_learningx_club_heading"
+            android:layout_toRightOf="@id/make_connection_heading"/>
+
+        <LinearLayout
+            android:id="@+id/live_session_heading"
+            android:layout_width="120dp"
+            android:layout_height="136dp"
+            android:layout_below="@id/make_connection_paragraph"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_person_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create your club"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="join or create your college club"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/live_session_paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/create_club_text"
+            android:textSize="10dp"
+            android:layout_below="@id/make_connection_paragraph"
+            android:layout_toLeftOf="@id/live_session_heading"/>
+
+        <LinearLayout
+            android:id="@+id/learn_skills_heading"
+            android:layout_width="120dp"
+            android:layout_height="136dp"
+            android:layout_below="@id/live_session_paragraph"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_person_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create your club"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="join or create your college club"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/learn_skills_paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/create_club_text"
+            android:textSize="10dp"
+            android:layout_below="@id/live_session_heading"
+            android:layout_toRightOf="@id/learn_skills_heading"/>
+
+        <LinearLayout
+            android:id="@+id/earn_prize_heading"
+            android:layout_width="120dp"
+            android:layout_height="136dp"
+            android:layout_below="@id/learn_skills_paragraph"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_person_add_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create your club"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="join or create your college club"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/earn_prize_paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/create_club_text"
+            android:textSize="10dp"
+            android:layout_below="@id/learn_skills_heading"
+            android:layout_toLeftOf="@id/earn_prize_heading"/>
+
+    </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="© 2022, Learningx Pvt. Ltd. All Rights Reserved."/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
